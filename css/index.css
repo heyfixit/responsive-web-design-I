@@ -75,7 +75,6 @@ h1, h2, h3, h4, h5 {
 @media screen and (max-width: 800px) {
   .container {
     padding: 20px;
-    background-color: lightpink;
   }
 }
 
@@ -84,12 +83,6 @@ h1, h2, h3, h4, h5 {
     padding: 0;
   }
 }
-
-/* @media screen and (max-width: 500px) { */
-/*   .container { */
-/*     padding-top: 10px; */
-/*   } */
-/* } */
 
 header {
   position: fixed;
@@ -282,7 +275,8 @@ nav a:first-child {
   }
 
   .bottom-content {
-    padding: 39px 20px;
+    margin-top: 6px;
+    padding: 0px 20px 0px;
   }
 
   .middle-content section {
@@ -293,8 +287,8 @@ nav a:first-child {
 
   .bottom-content section {
     padding: 0;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 38px;
   }
 
   .services, .product, .vision {
@@ -310,6 +304,12 @@ nav a:first-child {
 @media screen and (max-width: 800px) {
   .contact {
     padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    padding-left: 20px;
   }
 }
 
