@@ -67,9 +67,9 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-  width: 876px;
+  width: 880px;
   margin: 0 auto;
-  padding-top: 71px;
+  padding-top: 67px;
 }
 
 header {
@@ -79,19 +79,18 @@ header {
   align-items: center;
   top: 0;
   background-color: white;
-  width: 876px;
+  width: 886px;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Staatliches', cursive;
-  height: 71px;
+  height: 93px;
 }
 
 nav a {
-  margin: 0 30px;
+  margin: 0 30px 0 31px;
   text-decoration: none;
   color: #BDBDBD;
 }
@@ -102,173 +101,63 @@ nav a:first-child {
 
 .jumbotron {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
-  height: 459px;
-  border-bottom: 1px solid black;
+  height: 520px;
 }
 
 .jumbo-left {
   text-align: center;
+  margin-right: 81px;
 }
 
 .jumbo-left h1 {
-  font-size: 85px;
+  font-size: 72px;
+}
+
+.jumbotron img.code-circle {
+  margin-right: -2px;
 }
 
 .jumbo-left button, .service-descriptions button,
 .product-description button {
-  margin-top: 5px;
-  padding: 3px 50px;
+  margin-top: 12px;
+  padding: 2px 42px;
   background: white;
   border: 1px solid black;
   font-family: 'Titillium Web', sans-serif;
   font-size: 110%;
 }
 
-.middle-content {
-  padding: 50px 0;
+.middle-content, .bottom-content {
+  padding: 37px 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  margin-top: 3px;
+  border-top: 2px solid black;
+}
+
+.bottom-content {
+  border-top: none;
+  padding: 26px 0px 36px;
+  border-bottom: 2px solid black;
+}
+
+.middle-content p, .bottom-content p {
+  font-size: 18px;
 }
 
 .services, .product, .vision {
-  width: 270px;
+  width: 293px;
 }
 
 .contact {
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 footer {
   text-align: center;
-  padding: 30px 0 100px;
-  font-size: 14px;
-}
-
-.services-about, .service-descriptions,
-.product-about, .product-descriptions {
-  padding: 30px 0;
-  border-bottom: 1px solid black;
-}
-
-.services-about h1, .product-about h1 {
-  font-size: 30px;
-}
-
-.product-descriptions, .service-descriptions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.service-descriptions {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (min-width: 876px) {
-  .service-descriptions {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.service-descriptions section {
-  width: 419px;
-  height: 251px;
-  padding: 23px;
-}
-
-.service-descriptions section {
-  margin-bottom: 30px;
-  background-color: #F4F3F4;
-  border: 1px solid black;
-}
-
-.product-descriptions section {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product-descriptions section h3 {
-  font-size: 25px;
-}
-
-.service-description button, .product-description button {
-  border-radius: 5px;
-  margin-top: 20px;
-  padding: 5px 30px;
-  font-size: 14px;
-}
-
-.some-facts {
-  margin: 30px 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.some-facts section {
-  margin-right: 40px;
-}
-
-ul {
-  list-style: square inside;
-}
-
-li {
-  margin: 10px 0;
-}
-
-img.services-header-img {
-  width: 876px;
-}
-
-@keyframes rotator {
-  to {transform: rotate(360deg);}
-}
-
-.product-descriptions img.code-circle {
-  width: 300px;
-  margin-left: 50px;
-}
-
-.medium img.code-circle, .premium img.code-circle {
-  animation-name: rotator;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 20s;
-  z-index: -1;
-}
-
-.premium img.code-circle {
-  animation-duration: 1s;
-}
-
-.testimonial {
-  margin: 30px 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.testimonial section {
-  margin-right: 40px;
-  font-size: 20px;
-}
-
-.testimonial p {
-  font-style: italic;
-  margin: 0 15px;
-}
-
-.testimonial-author {
-  padding-top: 20px;
-  text-align: right;
+  padding: 38px 0 100px;
+  font-size: 16px;
 }
