@@ -67,9 +67,16 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-  width: 880px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 67px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 20px;
+    background-color: lightpink;
+  }
 }
 
 header {
@@ -79,11 +86,25 @@ header {
   align-items: center;
   top: 0;
   background-color: white;
-  width: 886px;
 }
 
 header img.logo {
   padding-right: 6px;
+  order: -1;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: static;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  header img.logo {
+    padding: 0px;
+  }
 }
 
 nav {
@@ -101,6 +122,20 @@ nav a {
 
 nav a:first-child {
   margin-left: 0;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    margin: 0 40px 0 0;
+  }
+
+  nav a:first-child {
+    margin-left: 10px;
+  }
 }
 
 .jumbotron {
@@ -123,6 +158,23 @@ nav a:first-child {
   margin-right: -2px;
 }
 
+@media screen and (max-width: 800px) {
+  .jumbotron {
+    height: 345px;
+    justify-content: center;
+    margin: none;
+    margin-bottom: 38px;
+  }
+
+  .jumbo-left {
+    margin-right: 0;
+  }
+
+  img.code-circle {
+    display: none;
+  }
+}
+
 .jumbo-left button, .service-descriptions button,
 .product-description button {
   margin-top: 12px;
@@ -142,14 +194,25 @@ nav a:first-child {
   border-top: 2px solid black;
 }
 
+.middle-content p, .bottom-content p {
+  font-size: 18px;
+}
+
 .bottom-content {
   border-top: none;
   padding: 26px 0px 36px;
   border-bottom: 2px solid black;
 }
 
-.middle-content p, .bottom-content p {
-  font-size: 18px;
+
+@media screen and (max-width: 800px) {
+  .middle-content section, .bottom-content section {
+    padding: 0 10px;
+  }
+
+  .middle-img {
+    width: 100%;
+  }
 }
 
 .services, .product, .vision {
@@ -158,6 +221,12 @@ nav a:first-child {
 
 .contact {
   margin-top: 34px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    padding-left: 10px;
+  }
 }
 
 footer {
