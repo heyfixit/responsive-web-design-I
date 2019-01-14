@@ -82,6 +82,10 @@ header {
   width: 886px;
 }
 
+header img.logo {
+  padding-right: 6px;
+}
+
 nav {
   display: flex;
   align-items: center;
