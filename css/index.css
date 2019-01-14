@@ -75,8 +75,21 @@ h1, h2, h3, h4, h5 {
 @media screen and (max-width: 800px) {
   .container {
     padding: 20px;
+    background-color: lightpink;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0;
+  }
+}
+
+/* @media screen and (max-width: 500px) { */
+/*   .container { */
+/*     padding-top: 10px; */
+/*   } */
+/* } */
 
 header {
   position: fixed;
@@ -106,6 +119,13 @@ header img.logo {
   }
 }
 
+
+@media screen and (max-width: 500px) {
+  header img.logo {
+    padding: 10px 0 20px;
+  }
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -126,15 +146,36 @@ nav a:first-child {
 @media screen and (max-width: 800px) {
   nav {
     width: 100%;
+    height: auto;
   }
 
   nav a {
-    margin: 0 40px 0 0;
   }
 
   nav a:first-child {
     margin-left: 10px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  nav a {
+    margin: 0;
+    padding: 20px 0;
+    border-top: 1px solid black;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a:first-child {
+    margin: 0;
+  }
+
 }
 
 .jumbotron {
@@ -171,6 +212,14 @@ nav a:first-child {
 
   img.code-circle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .jumbotron {
+    height: 361px;
+    padding-top: 14px;
+    border-top: 1px solid black;
   }
 }
 
@@ -216,6 +265,42 @@ nav a:first-child {
 
 .services, .product, .vision {
   width: 293px;
+}
+
+@media screen and (max-width: 500px) {
+  .middle-content, .bottom-content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .middle-img {
+    padding: 0 20px;
+  }
+
+  .middle-content {
+    padding: 37px 20px 32px;
+  }
+
+  .bottom-content {
+    padding: 39px 20px;
+  }
+
+  .middle-content section {
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 21px;
+  }
+
+  .bottom-content section {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .services, .product, .vision {
+    width: 100%;
+  }
+
 }
 
 .contact {
