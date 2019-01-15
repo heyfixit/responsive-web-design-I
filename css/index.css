@@ -166,12 +166,46 @@ footer {
   font-size: 16px;
 }
 
+.services-about, .service-descriptions,
+.product-about, .product-descriptions {
+    padding: 30px 0;
+    border-bottom: 1px solid black;
+}
+
+.services-about h1, .product-about h1 {
+    font-size: 30px;
+}
+
+.service-descriptions section {
+    max-width: 419px;
+    margin: 6px;
+    height: 251px;
+    padding: 23px;
+}
+
+.service-descriptions section {
+    margin-bottom: 30px;
+    background-color: #F4F3F4;
+    border: 1px solid black;
+}
+
+.services-header-img {
+  width: 100%;
+}
+
+.service-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media (max-width: 800px) {
   header {
     position: static;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 10px;
     width: auto;
   }
@@ -210,9 +244,37 @@ footer {
   .contact {
     padding-left: 10px;
   }
+
+  .service-descriptions section {
+    max-width: 48%;
+    margin: 5px;
+    height: auto;
+  }
+
+  .services-info-img {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .some-facts section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .container {
     padding: 0;
   }
@@ -245,12 +307,10 @@ footer {
   nav {
     width: 100%;
     height: auto;
-    margin-top: 40px;
-    margin-bottom: 35px;
   }
 
   nav a:first-child {
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   .jumbotron {
@@ -297,4 +357,20 @@ footer {
     padding-left: 20px;
   }
 
+  .service-page .service-descriptions section {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+
+  .some-facts section {
+    padding: 20px 20px;
+  }
+
+  .services-about {
+    padding: 40px 20px;
+  }
 }
