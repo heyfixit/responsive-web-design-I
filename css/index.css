@@ -158,6 +158,8 @@ nav a:first-child {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   nav a {
     margin: 0;
